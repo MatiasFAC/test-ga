@@ -1,0 +1,8 @@
+services:
+  front-admin:
+      image: node:22
+      volumes:
+        - ./front-admin/app:/app
+      ports:
+        - "4200:4200"
+      command: tail -f /dev/null
